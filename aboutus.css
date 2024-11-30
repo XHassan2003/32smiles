@@ -54,7 +54,7 @@ body {
   border-radius: 25px;
   text-align: center;
   display: inline-block;
-  white-space: nowrap; /* Prevent the button from wrapping */
+  white-space: nowrap; 
 }
 
 .nav-link.btn-primary:hover {
@@ -85,6 +85,60 @@ body {
   color: #fff;
   background-color: #6a52d1;
 }
+
+
+
+
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      display: flex;
+      flex-direction: column;
+      align-items: start; 
+      width: 100%;
+    }
+  
+    .navbar-nav {
+      flex-direction: column; 
+      width: 100%;
+      padding: 0;
+      gap: 0;
+    }
+  
+    .nav-item {
+      width: 100%;
+      text-align: left;
+      margin: 0;
+    }
+  
+    .nav-link {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+  
+    .dropdown-menu {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%; 
+      padding: 0;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: #fff;
+    }
+  
+    .dropdown-item {
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      text-align: left; 
+    }
+  
+    .nav-link.btn-primary {
+      margin: 0 auto;
+      width: auto; 
+      text-align: center;
+    }
+  }
 
 .about-us {
   padding: 5rem 0;

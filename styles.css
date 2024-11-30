@@ -88,17 +88,17 @@ body {
 
 
 
-/* Align Navbar Items Vertically on Small Screens */
+
   @media (max-width: 768px) {
     .navbar-collapse {
       display: flex;
       flex-direction: column;
-      align-items: start; /* Align links to the left */
+      align-items: start; 
       width: 100%;
     }
   
     .navbar-nav {
-      flex-direction: column; /* Stack nav items vertically */
+      flex-direction: column; 
       width: 100%;
       padding: 0;
       gap: 0;
@@ -120,7 +120,7 @@ body {
       position: relative;
       left: 0;
       top: 0;
-      width: 100%; /* Full width on smaller screens */
+      width: 100%; 
       padding: 0;
       border-radius: 0;
       box-shadow: none;
@@ -130,12 +130,12 @@ body {
     .dropdown-item {
       padding: 0.75rem 1rem;
       font-size: 1rem;
-      text-align: left; /* Align dropdown items to the left */
+      text-align: left; 
     }
   
     .nav-link.btn-primary {
       margin: 0 auto;
-      width: auto; /* Center the button */
+      width: auto; 
       text-align: center;
     }
   }
@@ -201,39 +201,38 @@ body {
   }
 }
 
-/* General Styles for Carousel Section */
 .carousel-section {
-  padding: 3rem 1rem; /* Adjust padding for smaller screens */
+  padding: 3rem 1rem; 
 }
 
-/* Responsive Heading */
+
 .carousel-section h2 {
-  font-size: 2.5rem; /* Smaller font size on mobile */
+  font-size: 2.5rem; 
   font-weight: bold;
 }
 
-/* Responsive Images */
+
 .carousel-item img {
-  max-height: 500px; /* Increased height for images */
-  object-fit: cover; /* Ensure the image fills the container proportionally */
+  max-height: 500px; 
+  object-fit: cover; 
 }
 
-/* Responsive Buttons */
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  padding: 0.8rem; /* Adjust size for smaller screens */
+  padding: 0.8rem; 
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 8%; /* Adjust button area size for better UX */
+  width: 8%; 
 }
 
-/* Carousel Indicators */
+
 .carousel-indicators {
   display: flex;
-  justify-content: center; /* Center the indicators */
-  gap: 0.5rem; /* Add spacing between indicators */
+  justify-content: center; 
+  gap: 0.5rem; 
 }
 
 .carousel-indicators [data-bs-target] {
@@ -241,55 +240,53 @@ body {
   height: 10px;
 }
 
-/* Media Queries */
+
 @media (max-width: 768px) {
   .carousel-section h2 {
-    font-size: 1.5rem; /* Smaller heading size on tablets */
+    font-size: 1.5rem;
   }
 
   .carousel-item img {
-    max-height: 450px; /* Increase image height for tablets */
+    max-height: 450px;
   }
 
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    padding: 0.6rem; /* Smaller navigation buttons */
+    padding: 0.6rem; 
   }
 
   .carousel-control-prev,
   .carousel-control-next {
-    width: 10%; /* Adjust button width for tablets */
+    width: 10%; 
   }
 }
 
 @media (max-width: 576px) {
   .carousel-section {
-    padding: 2rem 0.5rem; /* Compact padding for mobile devices */
+    padding: 2rem 0.5rem; 
   }
 
   .carousel-section h2 {
-    font-size: 1.2rem; /* Further reduce heading size */
+    font-size: 1.2rem; 
     margin-bottom: 1.5rem;
   }
 
   .carousel-item img {
-    max-height: 350px; /* Larger images on mobile */
+    max-height: 350px; 
   }
 
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    padding: 0.4rem; /* Further adjust button size */
+    padding: 0.4rem; 
   }
 }
-
-/* Latest Research Section */
 .latest-research-section {
-  background-color: #fff6e4; /* Light background matching the theme */
-  padding: 4rem 1rem; /* Consistent padding with the theme */
+  background-color: #fff6e4; 
+  padding: 4rem 1rem; 
 }
 
 .latest-research-section h2 {
-  font-size: 2.5rem; /* Heading size consistent with theme */
+  font-size: 2.5rem; 
   font-weight: bold;
   color: #5a41c0;
   margin-bottom: 2rem;

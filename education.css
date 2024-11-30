@@ -3,6 +3,11 @@ body {
     background-color: #fff6e4;
   }
   
+  .navbar {
+    background-color: transparent;
+    padding: 1rem 0;
+  }
+  
   .navbar-brand {
     font-family: "Lobster", sans-serif; 
     font-size: 2.5rem; 
@@ -48,7 +53,7 @@ body {
     border-radius: 25px;
     text-align: center;
     display: inline-block;
-    white-space: nowrap; /* Prevent the button from wrapping */
+    white-space: nowrap; 
   }
   
   .nav-link.btn-primary:hover {
@@ -62,26 +67,79 @@ body {
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(90, 65, 192, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
-
-  /* Dropdown menu alignment */
-.dropdown-menu {
-  margin-top: 0.5rem;
-  border-radius: 0.5rem;
-  min-width: 200px;
-  text-align: center;
-}
-
-.dropdown-item {
-  color: #5a41c0;
-  padding: 0.5rem 1rem;
-}
-
-.dropdown-item:hover {
-  color: #fff;
-  background-color: #6a52d1;
-}
   
-  /* Courses Section Styling */
+  .dropdown-menu {
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    min-width: 200px;
+    text-align: center;
+  }
+  
+  .dropdown-item {
+    color: #5a41c0;
+    padding: 0.5rem 1rem;
+  }
+  
+  .dropdown-item:hover {
+    color: #fff;
+    background-color: #6a52d1;
+  }
+  
+  
+  
+  
+    @media (max-width: 768px) {
+      .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: start; 
+        width: 100%;
+      }
+    
+      .navbar-nav {
+        flex-direction: column; 
+        width: 100%;
+        padding: 0;
+        gap: 0;
+      }
+    
+      .nav-item {
+        width: 100%;
+        text-align: left;
+        margin: 0;
+      }
+    
+      .nav-link {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        text-align: left;
+      }
+    
+      .dropdown-menu {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%; 
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+        background-color: #fff;
+      }
+    
+      .dropdown-item {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        text-align: left; 
+      }
+    
+      .nav-link.btn-primary {
+        margin: 0 auto;
+        width: auto; 
+        text-align: center;
+      }
+    }
+  
+  
   .courses-section {
     padding: 5rem 0;
   }
