@@ -1,0 +1,376 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff6e4;
+  }
+  
+  .navbar {
+    background-color: transparent;
+    padding: 1rem 0;
+  }
+  
+  .navbar-brand {
+    font-family: "Lobster", sans-serif; 
+    font-size: 2.5rem; 
+    color: #8863ee; 
+    transition: color 0.3s ease; 
+  }
+  
+  .navbar-brand:hover {
+    color: #5a41c0; 
+  }
+  
+  
+  .navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: #5a41c0;
+    font-weight: 550;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem; 
+  }
+  
+  .nav-link:hover {
+    color: #6a52d1;
+  }
+  
+  .nav-link.btn-primary {
+    background-color: #5a41c0;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap; /* Prevent the button from wrapping */
+  }
+  
+  .nav-link.btn-primary:hover {
+    background-color: #6a52d1;
+  }
+  
+  .navbar-toggler {
+    border-color: transparent;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(90, 65, 192, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .dropdown-menu {
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    min-width: 200px;
+    text-align: center;
+  }
+  
+  .dropdown-item {
+    color: #5a41c0;
+    padding: 0.5rem 1rem;
+  }
+  
+  .dropdown-item:hover {
+    color: #fff;
+    background-color: #6a52d1;
+  }
+
+  .appointment-section {
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #5a41c0; /* Matches the yellow accent in the navbar */
+    margin-bottom: 1rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #333; /* Subtle contrast for text */
+    margin-bottom: 1rem;
+  }
+  
+  .phone-link {
+    color: #333; /* Highlighted yellow */
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .phone-link:hover {
+    color: #ffc107; 
+  }
+  
+  .section-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333; /* Light gray for better readability */
+    margin-bottom: 2rem;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(90, 65, 192, 0.5); /* Matches the purple theme */
+  }
+  
+  .form-label {
+    font-weight: 600;
+    color: #5a41c0; /* Consistent purple for form labels */
+  }
+  
+  .form-control {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .form-control:focus {
+    border-color: #5a41c0;
+    box-shadow: 0 0 8px rgba(90, 65, 192, 0.7); /* Adds purple focus glow */
+  }
+  
+  .invalid-feedback {
+    color: #e3342f;
+    font-size: 0.875rem;
+  }
+  
+  .btn-primary {
+    background-color: #5a41c0;
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px; /* Rounded button for a friendly appearance */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #6a52d1;
+    box-shadow: 0 4px 10px rgba(106, 82, 209, 0.5);
+  }
+  
+ /* General Styling */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .popup {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    text-align: center;
+    padding: 30px;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .popup img {
+    width: 100px;
+    margin: -50px auto 20px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup h2 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  .popup p {
+    font-size: 16px;
+    margin: 10px 0 20px;
+  }
+  
+  .close-btn {
+    padding: 10px 30px;
+    background-color: #5a41c0; 
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-close:hover {
+    background-color: #6a52d1;
+  }
+  .popup-container.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+    .form-container {
+      padding: 1.5rem;
+    }
+  }
+  
+  
+
+  
+  .footer {
+    background-color: #f4f0fd;
+    color: #5a41c0;
+    font-family: "Poppins", sans-serif;
+    padding: 40px 0;
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .footer .brand-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #5a41c0;
+  }
+  
+  .footer .footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #5a41c0;
+  }
+  
+  .footer p,
+  .footer a {
+    font-size: 14px;
+    color: #5a41c0;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: #5a41c0;
+    text-decoration: none;
+  }
+  
+  .footer .social-links a {
+    color: #5a41c0;
+    font-size: 18px;
+  }
+  
+  .footer .social-links a:hover {
+    color: #3e278b;
+  }
+  
+  .footer .btn-primary {
+    background-color: #5a41c0;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer .btn-primary:hover {
+    background-color: #4a32a8;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(90, 65, 192, 0.3);
+  }
+  
+  .footer input[type="email"] {
+    border: 2px solid #5a41c0;
+    border-radius: 20px;
+    padding: 10px 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .footer input[type="email"]:focus {
+    border-color: #4a32a8;
+    box-shadow: 0 0 5px rgba(90, 65, 192, 0.5);
+  }
+  
+    
+    
+    @media (max-width: 768px) {
+      .footer .col-lg-3 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    
+      .footer .social-links {
+        text-align: center;
+      }
+    
+      .footer .social-links a {
+        font-size: 24px; 
+        margin: 0 10px; 
+      }
+    
+      
+      .footer form input[type="email"] {
+        width: 80%;
+        margin-bottom: 10px;
+      }
+    
+      .footer form button {
+        width: 80%;
+      }
+    
+      .footer .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    
+  
+    .footer .container {
+      width: 100%;
+      padding: 0 15px; 
+    }
+    
+  

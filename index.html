@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32 Smiles</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&family=Playfair:ital,opsz@0,5..1200;1,5..1200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">32 Smiles</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>           
+              <!-- Professional Education Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="professionalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Professional Education
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="professionalDropdown">
+                  <li><a class="dropdown-item" href="courses.html">Finding Related Courses</a></li>
+                  <li><a class="dropdown-item" href="faculty.html">Faculty Resources</a></li>
+                  <li><a class="dropdown-item" href="studentsresource.html">Student Resources</a></li>
+                  <li><a class="dropdown-item" href="casestudies.html">Case Studies</a></li>
+                </ul>
+              </li>
+              
+              <!-- Patient Education Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="patientDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Patient Education
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="patientDropdown">
+                  <li><a class="dropdown-item" href="information.html">General Information</a></li>
+                  <li><a class="dropdown-item" href="oral.html">Oral/Dental Issues</a></li>
+                </ul>
+              </li>
+              
+              <!-- Research Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Research
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="researchDropdown">
+                  <li><a class="dropdown-item" href="research.html">Latest Research</a></li>
+                  <li><a class="dropdown-item" href="research.html">Necessary Documents</a></li>
+                  <li><a class="dropdown-item" href="research.html">Media Library</a></li>
+                </ul>
+              </li>
+              
+              <!-- Products Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="productsDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                  <li><a class="dropdown-item" href="products1.html">Toothpastes</a></li>
+                  <li><a class="dropdown-item" href="products2.html">Brushes</a></li>
+                  <li><a class="dropdown-item" href="products3.html">Special Products for Kids</a></li>
+                  <li><a class="dropdown-item" href="products4.html">Electrical Accessories</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              
+              <!-- Book Now Button -->
+              <li class="nav-item">
+                <a class="nav-link btn-primary text-white rounded-pill px-4" href="booknow.html">Book Now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-md-start text-center">
+                    <h1 class="hero-heading">Where oral care meets self-care.</h1>
+                    <p class="hero-subheading">Welcome to 32 Smiles, your trusted dental blog and service. Explore the best tips for oral health and self-care!</p>
+                    <a href="#" class="btn btn-primary mt-3 herobtn">Book Now</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <video src="assests/32smiles.mp4" controls class="hero-video" autoplay muted loop></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section for Related Images -->
+<section class="carousel-section my-5">
+    <div class="container">
+        <h2 class="text-center mb-4">EXPLORE MORE ABOUT ORAL HEALTH</h2>
+        <div id="relatedImagesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assests/oralhealth1.jpg" class="d-block w-100" alt="Oral Health Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assests/oralhealth2.jpg" class="d-block w-100" alt="Oral Health Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assests/oralhealth3.jpg" class="d-block w-100" alt="Oral Health Image 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#relatedImagesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#relatedImagesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Information/Researches Section -->
+<section class="latest-research-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">LATEST IN DENTISTRY</h2>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="research-card p-4 shadow-sm rounded">
+                    <h5 class="research-title">Revolutionizing Tooth Growth</h5>
+                    <p class="research-desc">
+                        Scientists have made groundbreaking progress in growing new teeth from stem cells. This could revolutionize dental care!
+                    </p>
+                    <a href="https://www.google.com/search?q=Revolutionizing+Tooth+Growth+stem+cells" class="text-primary" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="research-card p-4 shadow-sm rounded">
+                    <h5 class="research-title">AI in Dental Diagnostics</h5>
+                    <p class="research-desc">
+                        Artificial intelligence is now being used to detect cavities and other dental issues more accurately and quickly.
+                    </p>
+                    <a href="https://www.google.com/search?q=AI+in+Dental+Diagnostics+cavities+accuracy" class="text-primary" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="research-card p-4 shadow-sm rounded">
+                    <h5 class="research-title">New Biodegradable Implants</h5>
+                    <p class="research-desc">
+                        Learn about the latest biodegradable implants designed to replace missing teeth without surgery.
+                    </p>
+                    <a href="https://www.google.com/search?q=New+Biodegradable+Implants+dental+surgery" class="text-primary" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Services Section -->
+    <section class="why-switch">
+        <div class="container my-5">
+            <h2 class="text-center section-title">WHY SWITCH TO 32 SMILES?</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4 col-sm-6">
+                    <div class="switch-card">
+                        <div class="card-icon">
+                            <i class="fas fa-smile-beam"></i>
+                        </div>
+                        <h3 class="card-title">No Shame in Our Game</h3>
+                        <p class="card-text">Here for a good time, not a long time. Enjoy a shame-free, super seamless appointment, powered by the latest in dental tech and a rockstar team.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="switch-card">
+                        <div class="card-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h3 class="card-title">Tailored to Your Tastes</h3>
+                        <p class="card-text">Hot towels, headphones, Starbucks coffee, and more. With so many perks, you might forget you're at the dentist.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="switch-card">
+                        <div class="card-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <h3 class="card-title">Ballin' On A Budget</h3>
+                        <p class="card-text">Premium perks are standard at Swish. With pricing set by the ADA and direct billing for insurance, you can be a little extra at no cost.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Clinic Section -->
+    <section class="our-clinic-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: #5a41c0;">OUR CLINIC</h2>
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-12">
+                    <div class="clinic-main-image">
+                        <img src="assests/clinic1.jpg" alt="Clinic Main View" class="img-fluid rounded shadow-sm"/>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row g-3">
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <img src="assests/clinic2.jpg" alt="Clinic Detail 1" class="img-fluid rounded shadow-sm"/>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <img src="assests/clinic3.jpg" alt="Clinic Detail 2" class="img-fluid rounded shadow-sm"/>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <img src="assests/clinic4.jpg" alt="Clinic Detail 2" class="img-fluid rounded shadow-sm"/>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-12">
+                            <img src="assests/clinic5.jpg" alt="Clinic Detail 2" class="img-fluid rounded shadow-sm"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps to make Smile section -->
+    <section class="steps-section">
+        <h2 class="section-title">3 SIMPLE STEPS FOR ACHIEVING YOUR BEST SMILE</h2>
+        <div class="steps-container">
+          <div class="step-card">
+            <img src="assests/smile1.webp" alt="Step 1 Image">
+            <div class="step-number">1</div>
+            <p class="step-text">Schedule an exam</p>
+          </div>
+          <div class="step-card">
+            <img src="assests/smile2.webp" alt="Step 2 Image">
+            <div class="step-number">2</div>
+            <p class="step-text">Speak with a dentist about your goals</p>
+          </div>
+          <div class="step-card">
+            <img src="assests/smile3.webp" alt="Step 3 Image">
+            <div class="step-number">3</div>
+            <p class="step-text">Create a plan and start your smile journey</p>
+          </div>
+        </div>
+        <div class="steps-btn-container">
+          <a href="booknow.html" class="btn-primary steps-btn">Book Now</a>
+        </div>
+      </section>
+
+      <section class="promo-section text-center py-5">
+        <div class="container position-relative">
+          <h2 class="display-4 text-dark fw-bold">Say ahhhh...</h2>
+          <a href="booknow.html" class="btn btn-light btn-lg mt-3 fw-bold">BOOK NOW</a>
+        </div>
+      </section>
+      
+      
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="brand-logo mb-3">32 Smiles</h5>
+                <p>Stay in the loop with the latest news, events, and updates, straight to your inbox.</p>
+                <form>
+                    <input type="email" class="form-control mb-2" placeholder="name@gmail.com" />
+                    <a href="mailto:info@32smiles.com" type="submit" class="btn btn-primary">Subscribe</a>
+                </form>
+            </div>
+            
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Locations</h5>
+                    <p><strong>32 Smiles Downtown</strong><br />W634+F7 Kausar Town<br /> Karachi, Pakistan</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Contact</h5>
+                    <p>Call <a href="+922134495859">+92 2134495859</a> to reach our clinic directory.</p>
+                    <p>Email: <a href="mailto:info@32smiles.com">info@32smiles.com</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">Meet 32 Smiles</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-links mt-4 text-center">
+                <a href="https://www.facebook.com/" target="_blank" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="me-3"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://x.com/" target="_blank" class="me-3"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 32 Smiles. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d8131fb824.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
