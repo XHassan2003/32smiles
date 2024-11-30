@@ -86,52 +86,60 @@ body {
   background-color: #6a52d1;
 }
 
-/* Adjust Dropdown Menu for Small Devices */
-@media (max-width: 768px) {
-  .dropdown-menu {
-    position: static; /* Prevent overlapping */
-    float: none; /* Align within the navbar collapse */
-    width: 100%; /* Full width dropdown */
-    text-align: left; /* Align items to the left */
-    background-color: #fff; /* Ensure visibility */
-    border-radius: 0;
-    box-shadow: none;
-  }
 
-  .dropdown-item {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-  }
-}
 
 /* Align Navbar Items Vertically on Small Screens */
-@media (max-width: 768px) {
-  .navbar-collapse {
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Align links to the left */
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      display: flex;
+      flex-direction: column;
+      align-items: start; /* Align links to the left */
+      width: 100%;
+    }
+  
+    .navbar-nav {
+      flex-direction: column; /* Stack nav items vertically */
+      width: 100%;
+      padding: 0;
+      gap: 0;
+    }
+  
+    .nav-item {
+      width: 100%;
+      text-align: left;
+      margin: 0;
+    }
+  
+    .nav-link {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+  
+    .dropdown-menu {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width on smaller screens */
+      padding: 0;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: #fff;
+    }
+  
+    .dropdown-item {
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      text-align: left; /* Align dropdown items to the left */
+    }
+  
+    .nav-link.btn-primary {
+      margin: 0 auto;
+      width: auto; /* Center the button */
+      text-align: center;
+    }
   }
 
-  .navbar-nav {
-    flex-direction: column;
-    gap: 0; /* Remove extra spacing between items */
-  }
-
-  .nav-item {
-    width: 100%;
-    text-align: left;
-  }
-
-  .nav-link {
-    width: 100%;
-    padding: 0.75rem 1rem;
-  }
-
-  .nav-link.btn-primary {
-    width: auto; /* Keep buttons smaller */
-    margin: 0 auto; /* Center buttons */
-  }
-}
 
 .hero-section {
   padding: 4rem 2rem;
