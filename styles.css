@@ -86,6 +86,53 @@ body {
   background-color: #6a52d1;
 }
 
+/* Adjust Dropdown Menu for Small Devices */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static; /* Prevent overlapping */
+    float: none; /* Align within the navbar collapse */
+    width: 100%; /* Full width dropdown */
+    text-align: left; /* Align items to the left */
+    background-color: #fff; /* Ensure visibility */
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .dropdown-item {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Align Navbar Items Vertically on Small Screens */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Align links to the left */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0; /* Remove extra spacing between items */
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-link.btn-primary {
+    width: auto; /* Keep buttons smaller */
+    margin: 0 auto; /* Center buttons */
+  }
+}
+
 .hero-section {
   padding: 4rem 2rem;
   background-color: #fff4e6;
